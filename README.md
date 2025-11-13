@@ -24,14 +24,14 @@ https://hub.docker.com/r/t4tsi/gs-7-ai-work-bots
 
 ## Descrição dos workflows CI/CD
 
-1. Versioning (Release Please)
+### 1. Versioning (Release Please)
 - Arquivo: .github/workflows/versioning.yml 
 
 - Gatilho: Push na branch main.
 
 - Função: Utiliza a action googleapis/release-please-action. O workflow analisa as mensagens de commit, cria automaticamente um Pull Request de Release, atualiza a versão no pom.xml, gera o CHANGELOG.md e cria as Tags de versão (ex: v1.0.0) no GitHub.
 
-2. Continuous Integration (CI)
+### 2. Continuous Integration (CI)
 - Arquivo: .github/workflows/ci.yml
 
 - Gatilho: Push nas branches feature/**, release e hotfix.
@@ -46,7 +46,7 @@ https://hub.docker.com/r/t4tsi/gs-7-ai-work-bots
 
 - Verifica se a imagem Docker pode ser construída sem erros.
 
-3. Continuous Delivery (CD)
+### 3. Continuous Delivery (CD)
 - Arquivo: .github/workflows/cd.yml
 
 - Gatilho: Pull Request aberto para a branch develop.
